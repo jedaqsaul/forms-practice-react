@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import Display from "./components/Display";
+import StudentTable from "./components/student-table";
+import students from "./lib/data";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -36,6 +38,7 @@ function App() {
         handleSubmit={handleSubmit}
       />
       <Display submittedData={submittedData} />
+      <StudentTable data={students} />
     </div>
   );
 }
