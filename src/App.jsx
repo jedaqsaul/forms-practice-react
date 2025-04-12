@@ -13,7 +13,9 @@ function App() {
   const [submittedData, setSubmittedData] = useState(null);
   // review
   const handleChange = (event) => {
-    const { name, value } = event.target;
+    // const { name, value } = event.target;
+    const name = event.target.name;
+    const value = event.target.value;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
