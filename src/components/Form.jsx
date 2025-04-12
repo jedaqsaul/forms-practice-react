@@ -3,7 +3,7 @@ import React from "react";
 function Form({ formData, handleChange, handleSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="form">
-      <h1>Enter student Info</h1>
+      <h2>Enter student Info</h2>
       <input
         type="text"
         name="name"
